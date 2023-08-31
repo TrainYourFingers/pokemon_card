@@ -1,10 +1,10 @@
-import { SafeAreaView, StatusBar, StyleSheet } from "react-native";
+import { ImageProps, SafeAreaView, StatusBar, StyleSheet } from "react-native";
 import PokemonCard from "./components/PokemonCard";
 import React from "react";
 
 type Pokemon = {
   name: string;
-  image: string;
+  image: ImageProps;
   type: string;
   hp: number;
   moves: string[];
