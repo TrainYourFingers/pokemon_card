@@ -26,29 +26,31 @@ const App = () => {
     moves: ["Scratch", "Ember", "Growl", "Leer"],
     weakness: ["Water", "Rock"],
   };
-  const bulbasaurData: Pokemon = {
-    name: "Bulbasaur",
-    image: require("./assets/bulbasaur.png"),
-    type: "Grass",
-    hp: 57,
-    moves: ["Tie", "Ember", "Growl", "Leer"],
-    weakness: ["Blade", "Fire"],
-  };
-  const pikachuData: Pokemon = {
-    name: "Pikachu",
-    image: require("./assets/pikachu.png"),
-    type: "Electric",
-    hp: 43,
-    moves: ["Scratch", "Ember", "Growl", "Leer"],
-    weakness: ["Water", "Rock"],
-  };
-  const squirtleData: Pokemon = {
+  const squirtleData = {
     name: "Squirtle",
     image: require("./assets/squirtle.png"),
     type: "Water",
+    hp: 44,
+    moves: ["Tackle", "Water Gun", "Tail Whip", "Withdraw"],
+    weakness: ["Electric", "Grass"],
+  };
+
+  const bulbasaurData = {
+    name: "Bulbasaur",
+    image: require("./assets/bulbasaur.png"),
+    type: "Grass",
+    hp: 45,
+    moves: ["Tackle", "Vine Whip", "Growl", "Leech Seed"],
+    weakness: ["Fire", "Ice", "Flying", "Psychic"],
+  };
+
+  const pikachuData = {
+    name: "Pikachu",
+    image: require("./assets/pikachu.png"),
+    type: "Electric",
     hp: 35,
-    moves: ["Scratch", "Ember", "Growl", "Leer"],
-    weakness: ["Fire", "Soil"],
+    moves: ["Quick Attack", "Thunderbolt", "Tail Whip", "Growl"],
+    weakness: ["Ground"],
   };
 
   return (
