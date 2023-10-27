@@ -4,6 +4,7 @@ import {
   ScrollView,
   StatusBar,
   StyleSheet,
+  TextInput,
 } from "react-native";
 import PokemonCard from "./components/PokemonCard";
 import React from "react";
@@ -54,15 +55,15 @@ const App = () => {
   };
 
   return (
-    <ScrollView>
-      <SafeAreaView style={styles.safeContainer}>
+    <SafeAreaView style={styles.safeContainer}>
+      <ScrollView automaticallyAdjustKeyboardInsets>
         <StatusBar backgroundColor="#f5f5f5" barStyle="dark-content" />
         <PokemonCard {...charmanderData} />
         <PokemonCard {...bulbasaurData} />
         <PokemonCard {...pikachuData} />
         <PokemonCard {...squirtleData} />
-      </SafeAreaView>
-    </ScrollView>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
   safeContainer: {
     flex: 1,
     backgroundColor: "#f5f5f5",
-    padding: 10,
+    paddingTop: StatusBar.currentHeight,
   },
 });
 
